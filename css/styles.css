@@ -1,0 +1,195 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*entonces queda 1 rem 10 px  */
+}
+
+/* NAVBAR */
+.navbar-brand{
+    font-size: 2rem !important;
+}
+.navbar_logo {
+    width: 100px;
+    height: 60px;
+}
+.navbar {
+    background-color: #333A40;
+    font-size: medium;
+}
+
+/* PORTADA */
+/* OPACIDAD CAROUSEL */
+div.carousel-inner div.carousel-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* TEXTO SOBRE IMAGEN */
+.portada_contenido {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 2;
+    mix-blend-mode: lighten;
+}
+
+.portada_texto-titulo{
+    font-size: 3vw;
+}
+
+.portada_texto-content{
+    font-size: 1.5vw !important;
+}
+
+.portada_boton{
+    font-size: 1.5vw !important;
+    color: white !important;
+    background-color: #26A645 !important;
+}
+
+/* CARDS */
+.container-cards{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30rem;
+    margin: 10px;
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.card-body{
+    display: block;
+    text-align: left;
+}
+
+.card-bottom{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_bottom_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .card--margin{
+    padding: 1rem;
+} */
+
+.card-text{
+    font-size: 1.4rem;
+}
+.js{
+    background-color: #FEC307;
+    padding: 1px 6px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+/* .orador_texto--bold{
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.oradores_texto{
+    font-size: 1.5rem;
+    font-weight: bold;
+} */
+.react{
+    background-color: #17A4B8;
+    color: white;
+    padding: 1px 6px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.negocios{
+    background-color: #6C757C;
+    color: white;
+    padding: 1px 6px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.startups{
+    background-color: #DC3346;
+    color: white;
+    padding: 1px 6px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+/* .col-md-6 img {
+    max-width: 100%;
+    height: auto;
+} */
+/* HONOLULU */
+.bg-honolulu{
+    background-color: #353A40;
+}
+
+.small-text {
+    font-size: 1.4rem;
+}
+
+.img-contenedor {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* FORM */
+.form_text--left{ 
+    text-align: left;
+}
+
+.boton_cambiar {
+    width: 100%;
+    background-color: #96C93E;
+    border-radius: 3px;
+}
+
+.form_text{
+    font-size: 1.3rem !important;
+}
+.enlace--change {
+    color:black;
+    text-decoration-style: dashed;
+}
+
+::placeholder{
+    font-size: 1.5rem;
+    color: red;
+}
+/* FOOTER */
+.footer--padding {
+    padding: 2rem;
+}
+
+.footer--bg {
+    background-color: #1D4054;
+}
+
+.footer_text{
+    color: white;
+    font-size: 1.5rem !important;
+}
+
+.footer_text:hover{
+    color: rgb(13, 4, 20) !important; 
+}
