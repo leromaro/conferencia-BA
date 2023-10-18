@@ -35,12 +35,10 @@ div.carousel-inner div.carousel-item::before{
     color: white;
     position: absolute !important;
     top: 40%;
-    left: 45% !important;
+    transform: translateX(80%);
     z-index: 2;
     mix-blend-mode: lighten; /*modo de mezcla*/
 }
-
-
 
 .portada_texto-titulo{
     font-size: 3vw;
@@ -54,6 +52,37 @@ div.carousel-inner div.carousel-item::before{
     font-size: 1.5vw !important;
     color: white !important;
     background-color: #26A645 !important;
+}
+
+@media (max-width: 920px) {
+    .portada_contenido {
+        position: relative !important;
+        text-align: center;
+        color: black !important;
+        mix-blend-mode: normal;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    .portada_texto-titulo {
+        font-size: 3rem;
+    }
+
+    .portada_texto-content {
+        font-size: 1.5rem !important;
+    }
+    
+    .portada_boton {
+        font-size: 1.5rem !important;
+    }
+    .btn-outline-light{
+        color: black !important;
+    }
+    .btn-outline-light:hover{
+        color: blueviolet !important;
+        background-color: antiquewhite !important;
+    }
 }
 
 /* CARDS */
@@ -207,4 +236,37 @@ div.carousel-inner div.carousel-item::before{
         height: auto;
         background-color: rgb(27, 64, 94);
     }
+}
+
+
+/* SEGUNDA PAGINA */
+#borrar{
+    margin: 0 5% 0 5%;
+}
+
+.card_ticket{
+    width: 180px;
+}
+select{
+    font-size: 1.5rem !important;
+}
+
+select option {
+    font-size: 1.5rem !important;
+  }
+
+.totalPagar{
+    padding: 20px;
+    margin: 40px 0 !important;
+    background-color: #a0cdd3;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.mensaje{
+    height: 80px;
+    text-align: center;
+}
+#mensaje{
+    font-size: medium;
 }

@@ -35,16 +35,16 @@
               <a class="nav-link active" href="#">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#oradores">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la fecha</a>
+              <a class="nav-link" href="#datos">El lugar y la fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviértete en orador</a>
+              <a class="nav-link" href="#orador">Conviértete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="#">Comprar tickets</a>
+              <a class="nav-link text-success" href="pages/buyTickets.html">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -73,38 +73,26 @@
 
     <!-- PORTADA
       Con carousel -->
-    <div class="carousel slide" data-bs-ride="carousel"
-      data-bs-interval="2500">
-      <div class="carousel-inner">
-        <div class="container portada_contenido">
-          <div class="container  text-end">
-            <p class="portada_texto-titulo ">Conf Bs As</p>
-            <p class="portada_texto-content">Bs As llega por primera vez a
-              Argentina. Un
-              evento para compartir con nuestra comunidad el conocimiento y
-              experiencia de los expertos que están creando el futuro de
-              internet.
-              Ven a conocer a miembros del evento, a otros estudiantes de Codo a
-              Codo y alos oradores de primer nivel que tenemos para tí. Te
-              esperamos!</p>
-            <a class="btn btn-outline-light portada_texto-content" href>Quiero
-              ser
-              orador</a>
-            <a class="btn portada_boton" href>Comprar
-              tickets</a>
-          </div>
-        </div>
+<div class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="media/ba1.jpg" class="d-block w-100" alt="...">
+            <img src="media/ba1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="media/ba2.jpg" class="d-block w-100" alt="...">
+            <img src="media/ba2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="media/ba3.jpg" class="d-block w-100" alt="...">
+            <img src="media/ba3.jpg" class="d-block w-100" alt="...">
         </div>
-      </div>
     </div>
+    <div class="container portada_contenido">
+        <p class="portada_texto-titulo">Conf Bs As</p>
+        <p class="portada_texto-content">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+        <a class="btn btn-outline-light portada_texto-content" href="#orador">Quiero ser orador</a>
+        <a class="btn portada_boton" href="/pages/buyTickets.html">Comprar tickets</a>
+    </div>
+</div>
+
 
     <!-- ORADORES 
       sin card-->
@@ -173,7 +161,7 @@
 
     <!-- ORADORES
       con card-->
-    <div class="container-fluid text-center mb-5">
+    <div id="oradores" class="container-fluid text-center mb-5">
         <h1> <span class="lead">CONOCE A LOS</span><br>ORADORES</h1>
         <div class="container-cards">
           <div class="card p-0">
@@ -236,8 +224,8 @@
         </div>
     </div>
 
-    <!-- HONOLULU-->
-    <div class="container-fluid p-0 honolulu">
+    <!-- Datos-->
+    <div id="datos" class="container-fluid p-0 honolulu">
       <div class="row g-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="media/honolulu.jpg" alt="honolulu">
@@ -257,7 +245,7 @@
     </div>
 
     <!-- FORMULARIO -->
-    <div class="container mt-4 text-center">
+    <div id="orador" class="container mt-4 text-center">
       <h1> <span class="lead">CONVIÉRTETE EN UN</span> <br> ORADOR</h1>
       <p class="form_text">Anótate como orador para dar una <a class="enlace--change" href>charla
           ignite.</a> Cuéntanos de qué quieres hablar!</p>
